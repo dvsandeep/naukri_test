@@ -32,6 +32,10 @@ public class TestUtil extends TestBase {
 		// error here is resolved by removing WEBDRIVER driver at begining because it is extending webdriver from base class
 		// very good
 		
+		System.out.println(" ------------------------------");
+		
+		System.out.println(" this code is working now");
+		
 		String parentWindowID = driver.getWindowHandle();
        
 
@@ -54,6 +58,9 @@ public class TestUtil extends TestBase {
 			driver.switchTo().window(parentWindowID);
 		}
 		return loginpage;
+		
+		
+		
 	}
   
 
