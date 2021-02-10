@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Naukari Appalication Test Automation suite]">
+  <test name="Naukari Application Test Cases(failed)">
+    <classes>
+      <class name="com.naukri.qa.testcases.HomePageTest">
+        <methods>
+          <include name="verifyhomepagelogo"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.naukri.qa.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Naukari Application Test Cases(failed) -->
+</suite> <!-- Failed suite [Naukari Appalication Test Automation suite] -->
