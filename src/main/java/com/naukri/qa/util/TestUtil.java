@@ -13,10 +13,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import com.naukri.qa.base.TestBase;
 import com.naukri.qa.pages.LoginPage;
 
-/**
- * @author vinay
- *
- */
 public class TestUtil extends TestBase {
 
 	LoginPage loginpage;
@@ -31,10 +27,17 @@ public class TestUtil extends TestBase {
 
 	public LoginPage switch_window() {
 		
-		//System.out.println(driver.getCurrentUrl());
+		
+		
+		// error here is resolved by removing WEBDRIVER driver at begining because it is extending webdriver from base class
+		// very good
+		
+		System.out.println(" ------------------------------");
+		
+		System.out.println(" this code is working now");
 		
 		String parentWindowID = driver.getWindowHandle();
-       //System.out.println(parentWindowID);
+       
 
 		Set<String> handles = driver.getWindowHandles();
 
@@ -55,6 +58,9 @@ public class TestUtil extends TestBase {
 			driver.switchTo().window(parentWindowID);
 		}
 		return loginpage;
+		
+		
+		
 	}
   
 
